@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "steps#connect"
   get '/connect' => "steps#connect"
 
   get '/learn' => "steps#learn"
