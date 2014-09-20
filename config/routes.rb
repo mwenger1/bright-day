@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get '/connect' => "steps#connect"
+
+  get '/learn' => "steps#learn"
+
+  get '/actions' => "steps#actions"
+
+  get '/resources' => "steps#resources"
+
   get 'sites/jed'
 
   get 'sites/upworthy'
