@@ -15,3 +15,6 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+$('.messages h2').click(function(){
+  $('.messages .action-content').show();
+});
