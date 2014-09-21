@@ -25,8 +25,8 @@ $(document).ready(function(){
 	$('.events h2').click(function(){
 		$('.events .action-content').slideToggle();
 	});
-	$('.product h2').click(function(){
-		$('.product .action-content').slideToggle();
+	$('.products h2').click(function(){
+		$('.products .action-content').slideToggle();
 	});
 	$('.images h2').click(function(){
 		$('.images .action-content').slideToggle();
