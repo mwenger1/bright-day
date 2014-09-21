@@ -1,12 +1,70 @@
+<style>
+/*
+ *
+ * Facebook Friend Autocomplete JQuery Plugin v0.0
+ * https://agelber.github.com/facebook-friend-autocomplete
+ *
+ * Copyright 2014 Assaf Gelber
+ * Released under the MIT license
+ *
+ */
+
+.fbac-suggestion-list {
+  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  font-color: #333;
+  text-align: left;
+  border: solid;
+  border-width: 1px 1px 2px;
+  border-color: #333 #333 #293e6a;
+  padding: 2px 0px;
+  z-index: 1000
+}
+
+.fbac-suggestion-list:empty {
+  border: none;
+}
+
+.fbac-suggestion {
+  padding: 2px 5px 2px 5px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.fbac-suggestion.fbac-selected {
+  background-color: #6d84b4;
+  border-color: #3b5998;
+  color: #fff;
+}
+
+.fbac-suggestion-avatar {
+  vertical-align: top;
+}
+
+.fbac-suggestion-name {
+  margin-left: 20px;
+  font-size:16px;
+}
+</style>
+
 <h1>Brighten a Friend's Day</h1>
 <p>This is a tool to help you learn about depression and discover ways to help those around you affected by it. All supportive actions you take are private and nobody will be notified.</p>
 </p>
 
 <div class="inner-addon right-addon">
     <i class="glyphicon glyphicon-search"></i>
-		<input type="search" class="form-control" autofocus placeholder="Search your Facebook friends" />
+		<input type="search" class="form-control" id="fb-input1" autofocus placeholder="Search your Facebook friends" />
 </div>
 <div class="next-step-container">
 	<%= link_to "Next Step", learn_path, class: "next-step" %>
 	<span class="glyphicon glyphicon-chevron-right"></span>
 </div>
+
+
+     <div id="login">
+    <h2>Login in with Facebook to view the demo</h2>
+    <p>Don't worry, no data is saved anywhere</p>
+    <button id="fb-login">Login</button>
+  </div>

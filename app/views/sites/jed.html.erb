@@ -17,13 +17,15 @@
 
 	<script src="https://www.jedfoundation.org/js/mootools.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://www.jedfoundation.org/js/jed.js" type="text/javascript" charset="utf-8"></script>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
 	</head>
 
 <body class="learnmore general">
 	<div id="wrap">
 
 		<div id="header">
-			<h1><a href="https://www.jedfoundation.org/">The Jed Foundation</a></h1>
+			<h1><a href="/">The Jed Foundation</a></h1>
 			<div id="tagline">preventing suicide and reducing emotional distress</div>
             <ol id="nav">
 
@@ -214,8 +216,7 @@
             <h3 class="sub">About Suicide Prevention&nbsp;</h3>
 
 
-<%=
-if (params[:id] == "clicked")
+<%= if (params[:id] == "clicked")
 		render "widget_second"
 	else
 		render "widget"

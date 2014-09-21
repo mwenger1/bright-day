@@ -15,9 +15,7 @@ Rails.application.routes.draw do
   get 'sites/jed'
   get 'sites/upworthy'
   get 'sites/nami'
-  get 'sites/jed/:id' => "sites#jed"
-  get 'sites/upworthy/:id' => "sites#upworthy"
-  get 'sites/nami/:id' => "sites#nami"
+  get 'sites/jed/:id' => "sites#jed", as: "jedclicked"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

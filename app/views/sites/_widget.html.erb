@@ -1,32 +1,53 @@
+
+<div style="padding:2em; background-color:#ccc; color:#1a6ca4; border:4px solid #333;">
+	<h2>Depression is Closer to Home Than You Think</h2>
+	<p>40 million adults are affected by major depression. It can be tough to wrap your head around such a large number, so click to connect with Facebook and we will put it in perspective.</p>
+
+	<div style="text-align:center;">
+		<%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+	</div>
+
+<small style="float:right;">Powered by <span>BrightDay</span></small>
+
+</div>
+
+
+
+
 <script>
+(function() {
+  jQuery(function() {
+    $('body').prepend('<div id="fb-root"></div>');
+    return $.ajax({
+      url: "" + window.location.protocol + "//connect.facebook.net/en_US/all.js",
+      dataType: 'script',
+      cache: true
+    });
+  });
+
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '731526133562929',
-      xfbml      : true,
-      version    : 'v2.1'
+      appId: '731526133562929',
+      cookie: true
+    });
+    $('#sign_in').click(function(e) {
+      e.preventDefault();
+      return FB.login(function(response) {
+        if (response.authResponse) {
+          return window.location = '/auth/facebook/callback';
+        }
+      });
+    });
+    return $('#sign_out').click(function(e) {
+      FB.getLoginStatus(function(response) {
+        if (response.authResponse) {
+          return FB.logout();
+        }
+      });
+      return true;
     });
   };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+}).call(this);
+
 </script>
-<div>
-	<h2>Depression is much closer to home than you think</h2>
-	<p>40 million individuals are affected by major depression. This can be a tough to wrap your head around so put the stat into context by connecting to Facebook.</p>
-	<div
-	  class="fb-like"
-	  data-share="true"
-	  data-width="450"
-	  data-show-faces="true">
-</div>
-
-	<a href="clicked">Connect to Facebook</button>
-</div>
-
-
-<div style="margin-bottom:300px;"></div>
