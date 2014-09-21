@@ -59,7 +59,27 @@ form{
 .inner-addon {
     position: relative;
 }
-
+// Actions
+.actions-options h2{
+	display: inline-block;
+	color: $blueColor;
+	font-family: 'Lobster';
+	font-size: 1.4em;
+}
+.actions-options span{
+	top: 24px;
+	float: right;
+}
+.actions-options div{
+	height: 60px;
+	width: 100%;
+}
+.actions-options .glyphicon{
+	color:$blueColor;
+}
+// .action-content{
+// 	display: none;
+// }
 /* style icon */
 .inner-addon .glyphicon {
   position: absolute;

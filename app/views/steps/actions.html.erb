@@ -1,5 +1,61 @@
-<h1>Suggestions to Brighten <%= @depressed.first_name %>'s Day</h1>
-
+<div class="col-xs-12">
+	<h1>Suggestions to Brighten <%= @depressed.first_name %>'s Day</h1>
+</div>
+<div class="actions-options col-xs-12">
+	<div class="messages">
+		<h2>Send a Message</h2>
+		<span class="glyphicon glyphicon-chevron-down"></span>
+		<div class="action-content">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="col-xs-12 form-label">To: <%= @depressed.first_name %></label>
+					<div class="col-xs-12">
+						<textarea class="form-control" type="text" placeholder="Type your message here"></textarea>
+					</div>
+				</div>
+			</form>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="col-xs-12 form-label">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Select one of <%= @depressed.first_name %>'s family members<span class="caret"></span></button>
+					<ul class="dropdown-menu" role="menu">
+					    <li><a href="#">Mom</a></li>
+					    <li><a href="#">Dad</a></li>
+					    <li><a href="#">Brother</a></li>
+					</ul>
+					</label>
+					<div class="col-xs-12">
+						<textarea class="form-control" type="text" placeholder="Type your message here"></textarea>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="reminders">
+		<h2>Sign up for Reminders</h2>
+		<span class="glyphicon glyphicon-chevron-down"></span>
+		<div class="action-content">
+		</div>
+	</div>
+	<div class="events">
+		<h2>Events and Activities</h2>
+		<span class="glyphicon glyphicon-chevron-down"></span>
+		<div class="action-content">
+		</div>
+	</div>
+	<div class="products">
+		<h2>Products</h2>
+		<span class="glyphicon glyphicon-chevron-down"></span>
+		<div class="action-content">
+		</div>
+	</div>
+	<div class="images">
+		<h2>Image Sharing</h2>
+		<span class="glyphicon glyphicon-chevron-down"></span>
+		<div class="action-content">
+		</div>
+	</div>
+</div>
 
 <div class="next-step-container">
 	<%= link_to "Next Step", resources_path, class: "next-step" %>
