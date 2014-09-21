@@ -1,14 +1,39 @@
-
-<div style="padding:2em; background-color:#ccc; color:#1a6ca4; border:4px solid #333;">
+<style type="text/css">
+  
+.sites-widget{
+    padding:2em; 
+    background-color:#bbc8d0; 
+    color:#1a6ca4; 
+}
+.sites-widget h2{
+    margin-bottom: 15px !important;
+}
+.sites-widget p{
+    color: #46677e;
+}
+.facebook-login{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.facebook-login a{
+  background: #46677e;
+  color: #fff;
+  padding: 10px 20px;
+  -webkit-font-smoothing: antialiased;
+}
+.facebook-login a:hover{
+  background: #728b9c;
+  text-decoration: none; 
+}
+</style>
+<div class="sites-widget">
 	<h2>Depression is Closer to Home Than You Think</h2>
 	<p>40 million adults are affected by major depression. It can be tough to wrap your head around such a large number, so click to connect with Facebook and we will put it in perspective.</p>
-
-	<div style="text-align:center;">
-		<%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
-	</div>
-
-<small style="float:right;">Powered by <span>BrightDay</span></small>
-
+  <div class="facebook-login">
+    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+  </div>
+  <small style="float:right;">Powered by <span>BrightDay</span></small>
 </div>
 
 
