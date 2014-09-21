@@ -1,4 +1,7 @@
 <h1>Suggestions to Brighten <%= @depressed.first_name %>'s Day</h1>
 
 
-<%= link_to "Next Step", resources_path, class:"next-step" %>
+<div class="next-step-container">
+	<%= link_to "Next Step", learn_path, class: "next-step" %>
+	<span class="glyphicon glyphicon-chevron-right"></span>
+</div>

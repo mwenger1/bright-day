@@ -2,9 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.next-step{
+@import "variables";
+
+.next-step-container{
 	float:right;
 	font-size:1.2em;
 	margin:3em 0;
 	display:block;
+	color: $greenColor;
+}
+.next-step:hover{
+	color: $blueColor;
+	text-decoration: none;
 }
