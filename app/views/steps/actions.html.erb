@@ -10,13 +10,20 @@
 				<div class="form-group  col-xs-12">
 					<label class="col-xs-12 form-label">To: <%= @depressed.first_name %></label>
 					<div class="col-xs-12">
-						<textarea class="form-control" type="text" placeholder="Type your message here"></textarea>
+						<textarea class="form-control" type="text" placeholder="Type your Facebook message here"></textarea>
 					</div>
 				</div>
 				<div class=" col-xs-12">
 					<button class="col-xs-11 btn btn-primary" style="margin-bottom: 20px">Send</button>
 				</div>
 			</form>
+		</div>
+	</div>
+
+<div class="message-family">
+		<h2>Share Your Concern With Another Loved One</h2>
+		<span class="glyphicon glyphicon-chevron-down"></span>
+		<div class="action-content">
 			<form class="form-horizontal">
 				<div class="form-group  col-xs-12">
 					<label class="col-xs-12 form-label">
@@ -37,37 +44,9 @@
 			</form>
 		</div>
 	</div>
-	<div class="reminders">
-		<h2>Sign up for Reminders</h2>
-		<span class="glyphicon glyphicon-chevron-down"></span>
-		<div class="action-content">
-			<p class="col-xs-12">Life gets busy, so we can send you text or email reminders to make sure you are staying in touch with <%= @depressed.first_name %>.</p>
-			<form class="form-horizontal">
-				<div class="form-group  col-xs-12">
-					<label class="col-xs-12 form-label">Your Email</label>
-					<div class="col-xs-12">
-						<input class="form-control" type="text" placeholder="Email Address">
-					</div>
-				</div>
-				<div class=" col-xs-12">
-					<button class="col-xs-11 btn btn-primary" style="margin-bottom: 20px">Sign Up</button>
-				</div>
-			</form>
-			<form class="form-horizontal">
-				<div class="form-group  col-xs-12">
-					<label class="col-xs-12 form-label">Phone Number</label>
-					<div class="col-xs-12">
-						<input class="form-control" type="text" placeholder="###-###-####">
-					</div>
-				</div>
-				<div class=" col-xs-12">
-					<button class="col-xs-11 btn btn-primary" style="margin-bottom: 20px">Sign Up</button>
-				</div>
-			</form>
-		</div>
-	</div>
+
 	<div class="events">
-		<h2>Events and Activities</h2>
+		<h2>Plan an Event or Activity</h2>
 		<span class="glyphicon glyphicon-chevron-down"></span>
 		<div class="action-content">
 			<p class="col-xs-12">We've searched <%= @depressed.first_name %>'s interests and location, and matched that with yours. Here are some suggested activities that you could invite <%= @depressed.first_name %> to.</p>
@@ -104,7 +83,7 @@
 		</div>
 	</div>
 	<div class="products">
-		<h2>Products</h2>
+		<h2>Buy Her Something</h2>
 		<span class="glyphicon glyphicon-chevron-down"></span>
 		<div class="action-content">
 			<p class="col-xs-12">We've selected some products below that are used to treat depression or help those with depression live better and easier daily lives. For example, the UV lamp gives people some much-needed vitamin-D during the lonely winter months.</p>
@@ -113,15 +92,47 @@
 		</div>
 	</div>
 	<div class="images">
-		<h2>Image Sharing</h2>
+		<h2>Send Upbeat Photos</h2>
 		<span class="glyphicon glyphicon-chevron-down"></span>
 		<div class="action-content">
-			<p class="col-xs-12">Studies show that looking at pictures of baby animals makes 99% of the population happier. Send <%= @depressed.first_name %> a cute puppy pic.</p>
+			<p class="col-xs-12">Studies show that looking at pictures of baby animals can leave a positive mark on someone's day. Send <%= @depressed.first_name %> a cute puppy pic.</p>
 			<%= image_tag("one_happy_puppy.jpg", :alt => "Puppy", :class => "col-xs-4") %>
 			<%= image_tag("pp.jpeg", :alt => "Puppy 2", :class => "col-xs-4") %>
 			<%= image_tag("pup.jpg", :alt => "Puppy 3", :class => "col-xs-4") %>
 		</div>
 	</div>
+
+
+	<div class="reminders">
+		<h2>Sign up for Future Tips and Reminders</h2>
+		<span class="glyphicon glyphicon-chevron-down"></span>
+		<div class="action-content">
+			<p class="col-xs-12">Life gets busy, so we can send you text or email reminders to make sure you are staying in touch with <%= @depressed.first_name %>.</p>
+			<form class="form-horizontal">
+				<div class="form-group  col-xs-12">
+					<label class="col-xs-12 form-label">Your Email</label>
+					<div class="col-xs-12">
+						<input class="form-control" type="text" placeholder="Email Address">
+					</div>
+				</div>
+				<div class=" col-xs-12">
+					<button class="col-xs-11 btn btn-primary" style="margin-bottom: 20px">Sign Up</button>
+				</div>
+			</form>
+			<form class="form-horizontal">
+				<div class="form-group  col-xs-12">
+					<label class="col-xs-12 form-label">Phone Number</label>
+					<div class="col-xs-12">
+						<input class="form-control" type="text" placeholder="###-###-####">
+					</div>
+				</div>
+				<div class=" col-xs-12">
+					<button class="col-xs-11 btn btn-primary" style="margin-bottom: 20px">Sign Up</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
 </div>
 
 <div class="next-step-container">
