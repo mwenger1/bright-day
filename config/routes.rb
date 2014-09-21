@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   root "steps#connect"
+  get 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/failure', to: redirect('/')
+  get 'signout', to: 'session#destroy', as: 'signout'
   get '/connect' => "steps#connect"
 
   get '/learn' => "steps#learn"
