@@ -19,4 +19,16 @@ $(document).ready(function(){
 	$('.messages h2').click(function(){
 		$('.messages .action-content').slideToggle();
 	});
+	$('.reminders h2').click(function(){
+		$('.reminders .action-content').slideToggle();
+	});
+	$('.events h2').click(function(){
+		$('.events .action-content').slideToggle();
+	});
+	$('.product h2').click(function(){
+		$('.product .action-content').slideToggle();
+	});
+	$('.images h2').click(function(){
+		$('.images .action-content').slideToggle();
+	});
 });
