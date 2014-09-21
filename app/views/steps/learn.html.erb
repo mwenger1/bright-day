@@ -1,7 +1,81 @@
-<h1>Understanding <%= @depressed.first_name %>'s Depression</h1>
-<p>Find me in app/views/steps/learn.html.erb</p>
+<div class="col-xs-12">
+	<h1>Understanding <%= @depressed.first_name %>'s Depression</h1>
+	<p>Tell us a little bit more about <%= @depressed.first_name %>.</p>
+</div>
+<form class="col-xs-12">
+	<p>Has <%= @depressed.first_name %> shown any of these warning signs?</p>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Withdrawl
+		</label>
+	</div>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Stopped eating or binge eating
+		</label>
+	</div>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Expressed self-loathing
+		</label>
+	</div>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Lack of interest in favorite things
+		</label>
+	</div>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Suicidal comments
+		</label>
+	</div>
+	<div class="col-xs-12">
+		<div class="input-group">
+			<span class="input-group-addon">
+				<input placeholder="Other" type="checkbox">
+			</span>
+			<input type="text" class="form-control">
+		</div><!-- /input-group -->
+	</div><!-- /.col-lg-6 -->
+</form>
 
+<form class="col-xs-12">
+	<p>Has <%= @depressed.first_name %> had any of these events happen recently?</p>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Moved homes
+		</label>
+	</div>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">New job/Lost job
+		</label>
+	</div>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Change in relationship status
+		</label>
+	</div>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Abuse or trauma
+		</label>
+	</div>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Not sure
+		</label>
+	</div>
+	<div class="col-xs-12">
+		<div class="input-group">
+			<span class="input-group-addon">
+				<input placeholder="Other" type="checkbox">
+			</span>
+			<input type="text" class="form-control">
+		</div><!-- /input-group -->
+	</div><!-- /.col-lg-6 -->
+</form>
 <div class="next-step-container">
-	<%= link_to "Next Step", learn_path, class: "next-step" %>
+	<%= link_to "Next Step", actions_path, class: "next-step" %>
 	<span class="glyphicon glyphicon-chevron-right"></span>
 </div>
