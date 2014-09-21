@@ -5,16 +5,6 @@
 	<p>Has <%= @depressed.first_name %> shown any of these warning signs?</p>
 	<div class="checkbox col-xs-12">
 		<label>
-		  <input type="checkbox">Withdrawl
-		</label>
-	</div>
-	<div class="checkbox col-xs-12">
-		<label>
-		  <input type="checkbox">Stopped eating or binge eating
-		</label>
-	</div>
-	<div class="checkbox col-xs-12">
-		<label>
 		  <input type="checkbox">Expressed self-loathing
 		</label>
 	</div>
@@ -25,9 +15,26 @@
 	</div>
 	<div class="checkbox col-xs-12">
 		<label>
+		  <input type="checkbox">Stopped eating or binge eating
+		</label>
+	</div>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Substance Abuse
+		</label>
+	</div>
+
+	<div class="checkbox col-xs-12">
+		<label>
 		  <input type="checkbox">Suicidal comments
 		</label>
 	</div>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Withdrawl
+		</label>
+	</div>
+
 	<div class="col-xs-12">
 		<div class="input-group">
 			<span class="input-group-addon">
@@ -39,7 +46,18 @@
 </form>
 
 <form class="col-xs-12">
-	<p>Has <%= @depressed.first_name %> had any of these events happen recently?</p>
+	<p>Have any of these events recently happened to <%= @depressed.first_name %>?</p>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Abuse or trauma
+		</label>
+	</div>
+	<div class="checkbox col-xs-12">
+		<label>
+		  <input type="checkbox">Change in relationship status
+		</label>
+	</div>
+
 	<div class="checkbox col-xs-12">
 		<label>
 		  <input type="checkbox">Moved homes
@@ -50,16 +68,7 @@
 		  <input type="checkbox">New job/Lost job
 		</label>
 	</div>
-	<div class="checkbox col-xs-12">
-		<label>
-		  <input type="checkbox">Change in relationship status
-		</label>
-	</div>
-	<div class="checkbox col-xs-12">
-		<label>
-		  <input type="checkbox">Abuse or trauma
-		</label>
-	</div>
+
 	<div class="checkbox col-xs-12">
 		<label>
 		  <input type="checkbox">Not sure
