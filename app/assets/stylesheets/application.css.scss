@@ -41,7 +41,14 @@ form{
 .footer, .navbar-default {
 	background-color:$blueColor;
 }
-
+#login{
+	text-align: center;
+	background: #ededed;
+	border-radius: 10px;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 .navbar-toggle {
 	float:left;
 	margin-left:15px;
