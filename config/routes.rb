@@ -9,13 +9,12 @@ Rails.application.routes.draw do
   get '/resources' => "steps#resources"
 
   get 'sites/jed'
-
-  get 'sites/jed/:id' => "sites#jed"
-
-
   get 'sites/upworthy'
-
   get 'sites/nami'
+  get 'sites/jed/:id' => "sites#jed"
+  get 'sites/upworthy/:id' => "sites#upworthy"
+  get 'sites/nami/:id' => "sites#nami"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
