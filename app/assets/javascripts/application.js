@@ -19,6 +19,9 @@ $(document).ready(function(){
 	$('.messages h2').click(function(){
 		$('.messages .action-content').slideToggle();
 	});
+	$('.message-family h2').click(function(){
+		$('.message-family .action-content').slideToggle();
+	});
 	$('.reminders h2').click(function(){
 		$('.reminders .action-content').slideToggle();
 	});
