@@ -1,2 +1,669 @@
-<h1>Sites#nami</h1>
-<p>Find me in app/views/sites/nami.html.erb</p>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+  <head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+
+
+
+
+<meta name="keywords" content="NAMI, mental illness, mentally ill, menatlly ill, schizophrenia, bipolar disorder, depression, mental health" />
+<meta name="verify-v1" content="5KY70uXDzoPK2YdKJbc0ozYr3sLWMZXVdbUscHsb9RM=" />
+<meta name="description" content="NAMI, the National Alliance on Mental Illness, is the nation's largest nonprofit, grassroots mental health education, advocacy and support organization dedicated to building better lives for the millions of Americans affected by mental illness, such as schizophrenia, bipolar disorder, depression, PTSD, obsessive-compulsive disorder, borderline personality disorder, panic disorder and other mental illnesses." />
+
+
+<link rel="StyleSheet" href="http://www.nami.org/Styles/Styles_chuck.css" type="text/css" />
+<link rel="StyleSheet" href="http://www.nami.org/Styles/nami_styles_dcmf.css" type="text/css" />
+<link rel="StyleSheet" href="http://www.nami.org/Styles/homepg.css" type="text/css" />
+<link rel="StyleSheet" href="http://www.nami.org/Styles/testnl.css" type="text/css" />
+<!--[if IE]>
+	<link rel="StyleSheet" href="http://www.nami.org/Styles/ie_styles.css" type="text/css" />
+<![endif]-->
+
+<!--[if IE 6]>
+	<link rel="StyleSheet" href="http://www.nami.org/Styles/ie6_styles.css" type="text/css" />
+<![endif]-->
+
+<link rel="shortcut icon" href="http://www.nami.org/favicon.ico" type="image/ico" />
+<link rel="icon" href="http://www.nami.org/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12818607-1']);
+  _gaq.push(['_setDomainName', 'nami.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<script language="JavaScript" type="text/javascript">
+
+
+
+	function _CF_onError(form_object, input_object, object_value, error_message)
+    {
+	alert(error_message);
+       	return false;
+    }
+
+
+
+function _CF_hasValue(obj, obj_type)
+    {
+    if (obj_type == "TEXT" || obj_type == "PASSWORD")
+	{
+    	if (obj.value.length == 0)
+      		return false;
+    	else
+      		return true;
+    	}
+    else if (obj_type == "SELECT")
+	{
+        for (i=0; i < obj.length; i++)
+	    	{
+		if (obj.options[i].selected)
+			return true;
+		}
+
+       	return false;
+	}
+    else if (obj_type == "SINGLE_VALUE_RADIO" || obj_type == "SINGLE_VALUE_CHECKBOX")
+	{
+
+		if (obj.checked)
+			return true;
+		else
+       		return false;
+	}
+    else if (obj_type == "RADIO" || obj_type == "CHECKBOX")
+	{
+
+        for (i=0; i < obj.length; i++)
+	    	{
+		if (obj[i].checked)
+			return true;
+		}
+
+       	return false;
+	}
+	}
+
+
+function  _CF_checksearchform(_CF_this)
+
+    {
+
+    if  (!_CF_hasValue(_CF_this.criteria, "TEXT" ))
+
+        {
+
+        if  (!_CF_onError(_CF_this, _CF_this.criteria, _CF_this.criteria.value, "You must enter search criteria."))
+
+            {
+
+            return false;
+
+            }
+
+        }
+
+
+    return true;
+
+    }
+
+
+function  _CF_checkCFForm_1(_CF_this)
+
+    {
+
+    return true;
+
+    }
+
+
+	var	NS4 = (document.layers);
+var	IE4 = (document.all);
+var	NS6 = ((navigator.appName.indexOf("Netscape") != -1) && (navigator.appVersion.indexOf("5") != -1));
+
+
+
+
+function getObject(obj){
+	if (NS4) {
+		var coll = 'layers[\'';
+		var styleObj = '\']';
+	} else if (NS6) {
+		var coll="getElementById('";
+		var styleObj = "').style";
+	} else { //IE4
+		var coll = 'all.';
+		var styleObj = '.style';
+	}
+
+	var theObj;
+	if (typeof obj == 'string') {
+		theObj = eval("document." + coll + obj + styleObj);
+	} else {
+		theObj = obj;
+	}
+	return theObj;
+}
+</script>
+<script language="JavaScript" type="text/javascript">
+
+function hide(obj) {
+	var theObj = getObject(obj);
+	if (theObj != null) {
+	theObj.display = "none";
+	}
+}
+function show(obj) {
+	var theObj = getObject(obj);
+	if (theObj != null) {
+	theObj.display = "block";
+	}
+}
+
+</script>
+
+
+
+
+<script type="text/javascript" src="audio/audio-player.js"></script>
+<script type="text/javascript">
+	AudioPlayer.setup("http://www.nami.org/audio/player.swf", {
+		width: 290
+	});
+</script>
+
+
+
+
+<script LANGUAGE=JAVASCRIPT TYPE="text/javascript" >
+<!--
+function  _CF_checkCFForm_1(_CF_this)
+    {
+    return true;
+    }
+
+//-->
+</script>
+<meta name="Keywords" content="mind of america foundation campaign give volunteer stigma">
+<meta name="Description" content="The Mind of America Foundation is a public/private partnership committed to bring the facts about mental illness and recovery to a wider public in order to eradicate stigma, improve access to scientific treatment and supports, and transform the mental healthcare system in America.">
+<title>NAMI | Mind of America Foundation</title></head>
+
+<body bgcolor="#EEF2FB" >
+
+
+<div id="global">
+
+<Div id="header">
+<h1><a href="http://www.nami.org">NAMI - The National Alliance on Mental Illness</a></h1>
+<a class="headerjoin" href="http://www.nami.org/template.cfm?section=Become_A_Member">Join</a>
+<a class="headerdonate" href="https://www.nami.org/template.cfm?section=Donate&template=/customsource/Donation/GeneralForm.cfm&lstid=100">Donate</a>
+<div id="headernav">
+<ul>
+    <li><a href="http://www.nami.org/template.cfm?section=About_NAMI">About NAMI</a></li>
+    <li><a href="http://www.nami.org/template.cfm?section=Contact_Us">Contact Us</a></li>
+    <li><a href="http://www.nami.org/members">NAMI Members</a></li>
+    <li><a href="http://www.nami.org/template.cfm?section=NAMI_Center_for_Excellence">NAMI Leaders</a></li>
+    <li><a href="http://www.nami.org/template.cfm?section=NAMI_en_espa%F1ol">en Espa&ntilde;ol</a></li>
+    <li><a href="http://www.nami.org/Content/NavigationMenu/Find_Support/Helpline/NAMI_Information_HelpLine.htm">Information Helpline</a>:</li>
+    <li>(800) 950-NAMI</li>
+</ul>
+</div>
+</Div>
+
+
+
+
+
+
+<div id="topnavbordertop"></div>
+
+<div id="topnavcontainer">
+
+<a href="http://www.nami.org/Template.cfm?Section=By_Illness" class="topnav">Mental Illnesses</a>
+<a href="http://www.nami.org/template.cfm?section=About_Treatments_and_Supports" class="topnav">Treatment</a>
+<a href="http://www.nami.org/Template.cfm?section=Find_Support" class="topnav">Support &amp; Programs</a>
+<a href="http://www.nami.org/Template.cfm?section=About_Public_Policy" class="topnav">NAMI Advocacy</a>
+<a href="http://www.nami.org/Template.cfm?Section=Your_Local_NAMI&Template=/CustomSource/AffiliateFinder.cfm" class="topnav">Find Your Local NAMI</a>
+<a href="http://www.nami.org/namiwalks" class="topnav" target="_blank">NAMIWalks</a>
+<div class="topnavsearch">Search</div>
+<div class="topnavsearchbox"><form name="searchform" action="http://www.nami.org/Template.cfm?section=Search&amp;Template=Search/SearchDisplay.cfm"  class="topnavsearchbox" method="post" onSubmit="return _CF_checksearchform(this)"><input type="text" name="criteria" size="10"  class="topsearch" maxlength="500" />
+<input type="image" src="http://www.nami.org/graphics/template/find_go2.gif"  alt="Search" class="topsearchbutton" /></form></div>
+</div>
+<div id="topnavspacer"> </div>
+<div id="topnavborderbottom"></div>
+
+
+
+
+
+
+          <div id="column2">
+    <div id="column1">
+
+<div id="leftcolumn">
+
+
+
+
+
+<a href="http://www.nami.org/template.cfm?section=About_Research" class="sidenav">Research</a>
+
+<div class="sidenavborder"></div>
+
+<a href="http://www.nami.org/template.cfm?section=About_Public_Policy" class="sidenav">Advocacy</a>
+
+
+
+<div class="sidenavborder"></div>
+
+<a href="http://www.nami.org/Template.cfm?Section=publications" class="sidenav">Publications</a>
+
+<div class="sidenavborder"></div>
+
+<a href="http://www.nami.org/Template.cfm?Section=namievents" class="sidenav">Events</a>
+
+<div class="sidenavborder"></div>
+
+<a href="http://www.nami.org/convention" class="sidenav">Convention</a>
+
+<div class="sidenavborder"></div>
+
+<a href="http://www.nami.org/template.cfm?section=all_discussion_groups" class="sidenav">Discussion Groups</a>
+
+<div class="sidenavborder"></div>
+
+<a href="http://www.nami.org/template.cfm?section=press_room" class="sidenav">Newsroom</a>
+
+<div class="sidenavborder"></div>
+
+<a href="http://www.consumerstar.org/" class="sidenav">STAR Center</a>
+
+<div class="sidenavborder"></div>
+
+<a href="http://www.nami.org/store" class="sidenav">NAMI Store</a>
+
+
+<div class="sidenavborder"></div>
+<!-- END SIDE NAV -->
+
+<div id="logincontainer">
+
+<p class="unlogin">username:</p>
+
+
+
+		<FORM NAME="CFForm_1" ACTION="http://www.nami.org/Template.cfm?Section=Sign_In&amp;template=/security/login.cfm" METHOD=POST onSubmit="return _CF_checkCFForm_1(this)" STYLE="margin:0px;padding:0px;">
+
+   <input type="text" name="UserName" size="11" value=""  style="margin: 5px 0px 0px 0px;"  />
+
+		<div class="clear"> </div>
+
+<p class="pwlogin">password:</p>
+		<input type="Password" value="" name="Password" size="11" style="margin: 5px 0px 0px 0px;"  />
+		<div class="clear"> </div>
+		<a href="https://www.nami.org/template.cfm?section=become_a_member"><img src="http://www.nami.org/Images/redesign/register_button.gif" alt="register" width="75" height="20" border="0" class="register" /></a>
+<input name="loginButton" type="image" src="http://www.nami.org/Images/redesign/sign_in_button.gif" alt="login" border="0" class="signin" />
+</FORM>
+<div class="clear"> </div>
+
+
+<a href="http://www.nami.org/Template.cfm?Section=My_Nami" class="forgotpw">myNAMI Account</a>
+
+
+<div class="sidenavborder"></div>
+
+<a href="http://www.nami.org/Template.cfm?Section=Sign_In&template=/Security/NoPassword.cfm" class="forgotpw">Forgot Login?</a>
+
+
+<div class="sidenavborder"></div>
+
+<a href="http://www.nami.org/template.cfm?section=logout" class="forgotpw">Log Out</a>
+
+
+<!-- END LOGIN CONTAINER -->
+
+<div class="sidenav2">
+<div style='margin:7px 0px 0px 10px;background-color:#E2CC82;padding-bottom:7px;'><table width='170' cellpadding='3' cellspacing='0' border='0'><tr ><td colspan='12' valign='top'><span class='LocalNavSelectedTitle'><a class='LocalNavSelectedTitle' href='http://www.nami.org/Template.cfm?section=Mind_of_America_Foundation' >Mind of America Foundation</a></span></td></tr><tr ><td align='left' width='7' class='small' valign='top'>&nbsp;</td><td colspan='11' valign='top'><span class='LocalNav'><a class='LocalNav' href='http://www.nami.org/Content/NavigationMenu/Mind_of_America_Foundation/Unmasking_Mental_Illness_Gala/Gala_2009.htm' >Unmasking Mental Illness Gala</a></span></td></tr></table></div>
+</div>
+</div>
+
+
+
+
+
+
+<div id="sideads2">
+
+
+
+
+
+		  		 	 	  <br />
+
+<div class="homeads" align="center"><a href="http://www.nami.org/notalone"><img border="0" src="http://www.nami.org/graphics/template/notalone_side.jpg" width="133" height="170" /></a></div>
+<!---
+
+<div class="homeads" align="center"><a href="http://www.nami.org/stateadvocacy"><img border="0" alt="State Advocacy 2010" src="http://www.nami.org/graphics/template/state_advocacy_sidead.gif" width="133" height="74" /></a></div>
+
+<div class="homeads" align="center"><a href="http://www.nami.org/Template.cfm?Section=Other&amp;Template=/ContentManagement/ContentDisplay.cfm&amp;ContentID=16765&amp;lstid=311"><img border="0" src="http://www.nami.org/graphics/template/starcenter_ad3.gif" width="133" height="121" /></a></div>
+
+<div class="homeads" align="center"><a href="http://overcomeobesitynow.org/about/" target="_blank"><img border="0" alt="NOON" src="http://www.nami.org/graphics/template/NOON-Web-Sticker-150x90.jpg" /></a></div>
+
+<div class="homeads" align="center"><a href="http://www.nami.org/schizophreniasurvey" target="_blank"><img border="0" src="http://www.nami.org/graphics/template/schizophreniaSurveyAd.gif" width="133" height="118" /></a></div>
+
+--->
+
+
+
+
+<div class="clear"></div>
+
+
+
+
+<!-- END SIDE ADS -->
+</div>
+
+
+
+
+
+<!-- END LEFT COLUMN -->
+</div>
+
+
+
+
+
+
+
+<div id="contentbody">
+
+
+<!-- inner content body -->
+	<div id="innercontentbody">
+
+
+
+   <div style="float:left">
+
+  <div class="breadcrumb">
+
+    <a href="http://www.nami.org/" class="breadcrumb">Home</a>
+
+
+      <img src="http://www.nami.org/Graphics/indentarrow.gif" alt="" border=0 align="bottom">Mind of America Foundation
+
+
+  </div>
+          </div>
+
+
+
+
+
+<div style="float:right;">
+
+
+
+
+<table height="17" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0">
+	<tr><td valign="top" align="right" height="17">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">addthis_pub  = 'namiaddthis';</script>
+<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://www.nami.org/graphics/addthis.gif" width="81" height="17" border="0" alt="" /></a>
+
+<script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+
+
+</td>
+		<td align="left" valign="top" height="17">&nbsp;|
+		<a href="http://www.nami.org/PrinterTemplate.cfm?section=Mind_of_America_Foundation"><img src="http://www.nami.org/Graphics/printicon3.gif" alt="Print this page" border="0" align="texttop"></a>&nbsp;|&nbsp;</td><td align="left" valign="top" height="17"><form action="http://www.nami.org/Template.cfm?Section=Mind_of_America_Foundation&template=/TellAFriend/SendToFriend2.cfm" method="post" style="margin: 0; padding: 0;display:inline;"><input type="hidden" name="PageLinkStatic" value="http://www.nami.org/Template.cfm?section=Mind_of_America_Foundation"><input type="hidden" name="Title" value="Mind of America Foundation"><input type="image" src="http://www.nami.org/Graphics/emailicon3.gif" alt="Email this page" border="0" align="texttop" height="17"></form></td><td align="left" valign="top"  height="17"><form action="http://www.nami.org/Personalization/bookmark.cfm" method="post" target="bookmark" style="margin: 0; padding: 0;"><input type="hidden" name="BookmarkURL" value="http://www.nami.org/Template.cfm?section=Mind_of_America_Foundation"><input type="hidden" name="BookmarkTitle" value="Mind of America Foundation">&nbsp;|&nbsp;<input type="image" src="http://www.nami.org/Graphics/saveicon3.gif" alt="Save to myNAMI" border="0" align="texttop" onClick="window.open('Save to myNAMI','bookmark','top=200,left=200,directories=no,height=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no,width=540');"></form>
+
+
+
+
+</td>
+
+
+
+</tr></table>
+</div>
+
+
+
+
+
+
+
+  <a href="http://www.nami.org/template.cfm?section=Mind_of_America_Foundation"><img src="http://www.nami.org/Graphics/TemplateHeader/Mind_of_America_Foundation_Header.gif"  border="0" alt="Mind_of_America_Foundation" style="clear:both"></a>
+
+
+
+
+  <div class="clear"> </div>
+
+
+
+  <br />
+
+  <div id="bodyDiv">
+
+<%=
+if (params[:id] == "clicked")
+		render "widget_second"
+	else
+		render "widget"
+	end %>
+
+  </div>
+
+
+
+  <div align="center"><BR>
+
+
+
+
+<table height="17" border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0">
+	<tr><td valign="top" align="right" height="17">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">addthis_pub  = 'namiaddthis';</script>
+<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://www.nami.org/graphics/addthis.gif" width="81" height="17" border="0" alt="" /></a>
+
+<script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+
+
+</td>
+		<td align="left" valign="top" height="17">&nbsp;|
+		<a href="http://www.nami.org/PrinterTemplate.cfm?section=Mind_of_America_Foundation"><img src="http://www.nami.org/Graphics/printicon3.gif" alt="Print this page" border="0" align="texttop"></a>&nbsp;|&nbsp;</td><td align="left" valign="top" height="17"><form action="http://www.nami.org/Template.cfm?Section=Mind_of_America_Foundation&template=/TellAFriend/SendToFriend2.cfm" method="post" style="margin: 0; padding: 0;display:inline;"><input type="hidden" name="PageLinkStatic" value="http://www.nami.org/Template.cfm?section=Mind_of_America_Foundation"><input type="hidden" name="Title" value="Mind of America Foundation"><input type="image" src="http://www.nami.org/Graphics/emailicon3.gif" alt="Email this page" border="0" align="texttop" height="17"></form></td><td align="left" valign="top"  height="17"><form action="http://www.nami.org/Personalization/bookmark.cfm" method="post" target="bookmark" style="margin: 0; padding: 0;"><input type="hidden" name="BookmarkURL" value="http://www.nami.org/Template.cfm?section=Mind_of_America_Foundation"><input type="hidden" name="BookmarkTitle" value="Mind of America Foundation">&nbsp;|&nbsp;<input type="image" src="http://www.nami.org/Graphics/saveicon3.gif" alt="Save to myNAMI" border="0" align="texttop" onClick="window.open('Save to myNAMI','bookmark','top=200,left=200,directories=no,height=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no,width=540');"></form>
+
+
+
+
+</td>
+
+
+
+</tr></table><BR></div>
+  <div id="three-actions">
+  <div class="left-action">
+        <h4>Donate</h4>
+        <p>Support NAMI to help millions of Americans who face mental illness every day.</p>
+        <a class="threebutton" onclick="_gaq.push(['_trackEvent','year-end-campaign','click-donate',document.location.pathname]);" href="https://nami360.nami.org/eweb/DynamicPage.aspx?Site=nami&WebKey=605fbd74-799c-46bc-aa1d-395245484823&action=add&dnr_cst_key=&ObjectKeyFrom=F41B6E06-299B-4022-BE6F-0641BA87DE59&gft_src_key=28ec36aa-d6f8-42cc-94ab-70b6972c9cdd">Donate today</a>
+  </div>
+
+  <div class="center-action">
+        <h4>Speak Out</h4>
+        <p>Inspire others with your message of hope. Show others they are not alone.</p>
+        <a class="threebutton" onclick="_gaq.push(['_trackEvent','year-end-campaign','click-share',document.location.pathname]);"  href="http://notalone.nami.org">Share your story</a>
+  </div>
+
+  <div class="right-action">
+        <h4>Get Involved</h4>
+        <p>Become an advocate. Register on NAMI.org to keep up with NAMI news and events.</p>
+        <a class="threebutton" onclick="_gaq.push(['_trackEvent','year-end-campaign','click-submit',document.location.pathname]);" href="https://www.nami.org/template.cfm?section=become_a_member">Join NAMI Today</a>
+  </div>
+</div>
+
+<div style="clear:both;"></div>
+
+
+
+
+
+<!-- end inner content -->
+ 	</div>
+<!-- END CONTENT BODY -->
+
+</div>
+
+<!-- END BODY CONTAINERS -->
+	</div>
+	<div style="clear:both"> </div>
+</div>
+
+
+<div id="homefooter">
+<!--Column 1-->
+    <div class="footercol1">
+        <ul>
+        	<li><a href="http://www.nami.org/Template.cfm?Section=My_Nami">MyNAMI</a></li>
+            <li><a href="http://www.nami.org/TemplateSwitch.cfm?TextOnly=True&PageURL=/TextTemplate.cfm?section%3DMind%5Fof%5FAmerica%5FFoundation">Low Graphics Template</a></li>
+            <li><a href="http://www.nami.org/Template.cfm?Section=Terms_of_Use">Terms of Use</a></li>
+            <li><a href="http://www.nami.org/Template.cfm?Section=site_map">Site Map</a></li>
+            <li>Copyright &copy; 1996-2014 NAMI</li>
+            <li>All Rights Reserved.</li>
+    	</ul>
+    </div>
+<!-- End Column 1-->
+
+<!--Column 2-->
+    <div class="footercol2">
+        <ul>
+        	<li><strong>Who We Are</strong></li>
+            <li><a href="http://www.nami.org/template.cfm?section=About_NAMI">About NAMI</a></li>
+            <li><a href="http://www.nami.org/Content/NavigationMenu/Inform_Yourself/About_NAMI/National_Board_of_Directors/NAMI_Board_of_Directors.htm">Meet the Board</a></li>
+            <li><a href="http://www.nami.org/Template.cfm?Section=Bios&amp;Template=/ContentManagement/ContentDisplay.cfm&amp;ContentID=48033">Meet the Staff</a></li>
+            <li><a href="http://www.nami.org/Content/NavigationMenu/Inform_Yourself/About_NAMI/Governance/How_NAMI_Is_Governed.htm">Governance</a></li>
+            <li><a href="http://www.nami.org/Content/NavigationMenu/Top_Story/Yashi_Brown.htm">NAMI Champions</a></li>
+            <li><a href="http://www.nami.org/Template.cfm?Section=Your_Local_NAMI&amp;Template=/CustomSource/AffiliateFinder.cfm">Find Your NAMI</a></li>
+            <li><a href="http://www.nami.org/Content/NavigationMenu/Inform_Yourself/About_NAMI/Annual_Reports/Annual_Reports.htm">Annual Reports</a></li>
+            <li><a href="http://www.nami.org/identity">NAMI Identity Guide</a></li>
+            <li><a href="http://www.nami.org/template.cfm?section=press_room">Newsroom</a></li>
+            <li><a href="http://www.nami.org/Template.cfm?Section=Employment">Employment</a></li>
+    	</ul>
+    </div>
+<!-- End Column 2-->
+
+<!--Column 3-->
+    <div class="footercol3">
+        <ul>
+        	<li><strong>NAMI Programs</strong></li>
+            <li><a href="http://www.nami.org/Template.cfm?Section=Family-to-Family&amp;lstid=605">Family-to-Family</a></li>
+            <li><a href="http://www.nami.org/template.cfm?section=Peer-to-Peer">Peer-to-Peer</a></li>
+            <li><a href="http://www.nami.org/template.cfm?section=In_Our_Own_Voice">In Our Own Voice</a></li>
+            <li><a href="http://www.nami.org/template.cfm?section=NAMI_Basics1">NAMI Basics</a></li>
+            <li><a href="http://www.nami.org/template.cfm?section=nami_connection">NAMI Connection</a></li>
+            <li><a href="http://www.nami.org/template.cfm?section=Provider_Education">Provider Education</a></li>
+            <li><a href="http://www.nami.org/Template.cfm?Section=Schools_and_Education&amp;template=/ContentManagement/ContentDisplay.cfm&amp;ContentID=38215">Parents &amp; Teachers as Allies</a></li>
+            <li><a href="http://www.nami.org/template.cfm?section=Hearts_and_Minds">Hearts &amp; Minds</a></li>
+            <li><a href="http://www.nami.org/Template.cfm?Section=Multicultural_Support1&amp;Template=/ContentManagement/ContentDisplay.cfm&amp;ContentID=55933">Sharing Hope</a></li>
+            <li><a href="http://www.nami.org/template.cfm?section=NAMI_on_Campus1">NAMI on Campus</a></li>
+    	</ul>
+    </div>
+<!-- End Column 3-->
+
+<!--Column 4-->
+    <div class="footercol4">
+        <ul>
+        	<li><strong>Support NAMI</strong></li>
+            <li><a href="http://www.nami.org/template.cfm?section=Donate_online&amp;lstid=100">Ways to Give</a></li>
+            <li><a href="https://www.nami.org/template.cfm?section=Donate&amp;template=/customsource/Donation/GeneralForm.cfm&amp;lstid=100">Donate Now</a></li>
+            <li><a href="http://www.nami.org/walkTemplate.cfm?section=namiwalks">NAMIWalks</a></li>
+
+            <li><a href="http://www.nami.org/ADVTemplate.cfm?Section=Magazine&amp;Template=/ContentManagement/ContentDisplay.cfm&amp;ContentID=83711.">Share Your Story</a></li>
+            <li><a href="http://www.nami.org/Template.cfm?section=Take_Action">Become an Advocate</a></li>
+            <li><a href="http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=4827"><img src="http://www.nami.org/images/home/charnavigator.jpg" width="40" height="50" hspace="5" border="0" /></a><a href="http://www.bbb.org/charity-reviews/national/human-services/nami-in-arlington-va-326"><img src="http://www.nami.org/images/home/bbbacred.jpg" width="40" height="50" hspace="5" border="0" /></a></li>
+		</ul>
+
+    </div>
+<!-- End Column 4-->
+
+<!--Column 5-->
+  <div class="footercol5">
+    <ul>
+        	<li><strong>Follow NAMI</strong></li>
+            <li><a href="https://www.facebook.com/officialNAMI" target="_blank"><img src="http://www.nami.org/images/home/facebook.jpg" width="30" height="30" border="0" /></a><a href="http://twitter.com/#!/namicommunicate" target="_blank"><img src="http://www.nami.org/images/home/twitter.jpg" width="30" height="30" hspace="5" border="0" /></a><a href="http://blog.nami.org" target="_blank"><img src="http://www.nami.org/images/home/blogger.jpg" width="30" height="30" border="0" /></a><a href="http://www.youtube.com/user/NAMIvideo" target="_blank"><img src="http://www.nami.org/images/home/youtube.jpg" width="60" height="30" border="0" /></a></li>
+            <li><strong>Contact Us</strong></li>
+          	<ul>
+              <li>NAMI</li>
+              <li>3803 N. Fairfax Dr., Suite 100</li>
+              <li>Arlington, Va 22203</li>
+              <li>Main: (703) 524-7600</li>
+              <li>Fax: (703) 524-9094</li>
+              <li>Member Services: (888) 999-6264</li>
+              <li><a href="http://www.nami.org/Content/NavigationMenu/Find_Support/Helpline/NAMI_Information_HelpLine.htm">Helpline</a>: (800) 950-6264</li>
+           </ul>
+    </ul>
+    </div>
+<!-- End Column 5-->
+</div>
+<!-- End Footer -->
+
+
+
+
+
+<!-- END GLOBAL -->
+</div>
+
+
+
+</body>
+
+
+</html>
+
+
+
