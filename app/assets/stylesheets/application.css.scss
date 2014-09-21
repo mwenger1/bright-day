@@ -20,9 +20,9 @@
 .navbar-default .navbar-toggle .icon-bar{
 	background-color: #fff;
 }
-.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus{
 	color: #9daf08;
 }
@@ -33,6 +33,7 @@
 h1 {
 	color:$greenColor;
 	font-family: $lobsterFont;
+	font-size:26px;
 }
 form{
 	margin-top: 20px;
