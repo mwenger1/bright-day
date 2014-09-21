@@ -6,6 +6,7 @@
 		<h2>Send a Message</h2>
 		<span class="glyphicon glyphicon-chevron-down"></span>
 		<div class="action-content">
+			<p class="col-xs-12">Reach out to <%= @depressed.first_name %> just to say hello and check in. If you're concernd about <%= @depressed.first_name %> and think that <%= @depressed.first_name %>'s family should be aware of your concerns, consider reaching out to her family.</p>
 			<form class="form-horizontal">
 				<div class="form-group  col-xs-12">
 					<label class="col-xs-12 form-label">To: <%= @depressed.first_name %></label>
@@ -41,6 +42,7 @@
 		<h2>Sign up for Reminders</h2>
 		<span class="glyphicon glyphicon-chevron-down"></span>
 		<div class="action-content">
+			<p class="col-xs-12">Life gets busy, so we can send you text or email reminders to make sure you are staying in touch with <%= @depressed.first_name %>.</p>
 			<form class="form-horizontal">
 				<div class="form-group  col-xs-12">
 					<label class="col-xs-12 form-label">Your Email</label>
@@ -69,12 +71,44 @@
 		<h2>Events and Activities</h2>
 		<span class="glyphicon glyphicon-chevron-down"></span>
 		<div class="action-content">
+			<p class="col-xs-12">We've searched <%= @depressed.first_name %>'s interests and location, and matched that with yours. Here are some suggested activities that you could invite <%= @depressed.first_name %> to.</p>
+			<div class="calendar-item col-xs-12">
+				<div class="date col-xs-4">
+					<p>Sept 21</p>
+					<p>8:00pm</p>
+				</div>
+				<div class="event col-xs-8">
+					<p>Ray Lamontagne Concert</p>
+					<a href="#"><span class="glyphicon glyphicon-calendar"></span> Add to Calendar</a>
+				</div>
+			</div>
+			<div class="calendar-item col-xs-12">
+				<div class="date col-xs-4">
+					<p>Sept 23</p>
+					<p>10:00am</p>
+				</div>
+				<div class="event col-xs-8">
+					<p>Women's Soccer Game</p>
+					<a href="#"><span class="glyphicon glyphicon-calendar"></span> Add to Calendar</a>
+				</div>
+			</div>
+			<div class="calendar-item col-xs-12">
+				<div class="date col-xs-4">
+					<p>Sept 26</p>
+					<p>5:00am</p>
+				</div>
+				<div class="event col-xs-8">
+					<p>Hiking Meetup: Poconos</p>
+					<a href="#"><span class="glyphicon glyphicon-calendar"></span> Add to Calendar</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="products">
 		<h2>Products</h2>
 		<span class="glyphicon glyphicon-chevron-down"></span>
 		<div class="action-content">
+			<p class="col-xs-12">We've selected some products below that are used to treat depression or help those with depression live better and easier daily lives. For example, the UV lamp gives people some much-needed vitamin-D during the lonely winter months.</p>
 			<%= image_tag("light.png", :alt => "Light",:class => "col-xs-12") %>
 			<%= image_tag("book.png", :alt => "Book",:class => "col-xs-12") %>
 		</div>
@@ -83,6 +117,7 @@
 		<h2>Image Sharing</h2>
 		<span class="glyphicon glyphicon-chevron-down"></span>
 		<div class="action-content">
+			<p class="col-xs-12">Studies show that looking at pictures of baby animals makes 99% of the population happier. Send <%= @depressed.first_name %> a cute puppy pic.</p>
 			<%= image_tag("one_happy_puppy.jpg", :alt => "Puppy", :class => "col-xs-4") %>
 			<%= image_tag("pp.jpeg", :alt => "Puppy 2", :class => "col-xs-4") %>
 			<%= image_tag("pup.jpg", :alt => "Puppy 3", :class => "col-xs-4") %>

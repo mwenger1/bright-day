@@ -48,11 +48,15 @@ form{
 	margin-right:0;
 
 }
-
+.container{
+	min-height: 500px;
+}
 .footer{
-  position: absolute;
-	bottom: 0;
 	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+}
+.footer img{
 	height: 60px;
 }
 
@@ -68,14 +72,22 @@ form{
 	font-size: 1.4em;
 	cursor: pointer;
 }
-.actions-options span{
+.actions-options .glyphicon-chevron-down{
 	top: 24px;
 	float: right;
 }
-.actions-options div{
+.actions-options .messages,
+.actions-options .reminders,
+.actions-options .events,
+.actions-options .products,
+.actions-options .images{
 	width: 100%;
+	border-bottom: 1px solid #ededed;
 }
-.actions-options .glyphicon{
+.actions-options h2:hover {
+	color: $greenColor;
+}
+.actions-options .glyphicon-chevron-down{
 	color:$blueColor;
 }
 .btn .caret{
@@ -84,6 +96,27 @@ form{
 }
 .action-content{
 	display: none;
+}
+// Events
+.calendar-item{
+	margin-bottom: 20px;
+}
+.event,
+.date{
+	color: #fff;
+	padding: 10px;
+}
+.event{
+	background: $blueColor;
+}
+.event a{
+	color: #fff;
+}
+.date{
+	background-color: $greenColor;
+}
+.calendar-item p{
+	margin: 0;
 }
 /* style icon */
 .inner-addon .glyphicon {
