@@ -1,11 +1,12 @@
 <style type="text/css">
-  
+
 .sites-widget{
-    padding:2em; 
-    background-color:#bbc8d0; 
-    color:#1a6ca4; 
+    padding:2em;
+    background-color:#bbc8d0;
+    color:#1a6ca4 !important;
 }
 .sites-widget h2{
+ color: #1a6ca4 !important;
     margin-bottom: 15px !important;
 }
 .sites-widget p{
@@ -16,7 +17,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.facebook-login a{
+.facebook-login a, .special-links a{
   background: #46677e;
   color: #fff;
   padding: 10px 20px;
@@ -24,7 +25,7 @@
 }
 .facebook-login a:hover{
   background: #728b9c;
-  text-decoration: none; 
+  text-decoration: none;
 }
 </style>
 <div class="sites-widget">
@@ -33,7 +34,7 @@
   <div class="facebook-login">
     <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
   </div>
-  <small style="float:right;">Powered by <span>BrightDay</span></small>
+  <small style="float:right; color:white;">Powered by <span style="color:#1a6ca4 !important;">BrightDay</span></small>
 </div>
 
 
