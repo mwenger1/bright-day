@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   get 'sites/nami'
   get 'sites/jed/:id' => "sites#jed", as: "jedclicked"
 
+  get "/slides" => "slides#show"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
