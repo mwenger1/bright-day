@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root "steps#connect"
+  resources :authentications
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'session#destroy', as: 'signout'
