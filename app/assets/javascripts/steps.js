@@ -213,9 +213,8 @@
     };
 
     function createFriendElement(friend) {
-      var $img = $('<img>').attr('src', friend.picture),
-          $name = $('<h3>').text(friend.name),
-          $friend = $('<div>').addClass('friend').append($img, $name);
+      window.location = "/learn";
+
       return $friend;
     }
 
