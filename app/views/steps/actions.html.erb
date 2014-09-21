@@ -89,9 +89,9 @@
 		<h2>Buy Her Something</h2>
 		<span class="glyphicon glyphicon-chevron-down"></span>
 		<div class="action-content">
-			<p class="col-xs-12">We've selected some products below that are used to treat depression or help those with depression live better and easier daily lives. For example, the UV lamp gives people some much-needed vitamin-D during the lonely winter months.</p>
-			<%= image_tag("light.png", :alt => "Light",:class => "col-xs-12") %>
-			<%= image_tag("book.png", :alt => "Book",:class => "col-xs-12") %>
+			<p class="col-xs-12">We've selected products used to help treat depression. A UV lamp gives people some much-needed vitamin-D during the lonely winter months.</p>
+			<%= image_tag("light.png", :alt => "Light",:class => "col-xs-12",:style => "max-width: 500px;") %>
+			<%= image_tag("book.png", :alt => "Book",:class => "col-xs-12",:style => "max-width: 500px;") %>
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -99,7 +99,7 @@
 		<h2>Send Upbeat Photos</h2>
 		<span class="glyphicon glyphicon-chevron-down"></span>
 		<div class="action-content">
-			<p class="col-xs-12">Studies show that looking at pictures of baby animals can leave a positive mark on someone's day. Send <%= @depressed.first_name %> a cute puppy pic.</p>
+			<p class="col-xs-12">Studies show pet photos can have a positive impact on someone's day. Select a cute puppy pic and send it to Hannah.</p>
 			<%= image_tag("one_happy_puppy.jpg", :alt => "Puppy", :class => "col-xs-4") %>
 			<%= image_tag("pp.jpeg", :alt => "Puppy 2", :class => "col-xs-4") %>
 			<%= image_tag("pup.jpg", :alt => "Puppy 3", :class => "col-xs-4") %>
@@ -112,7 +112,7 @@
 		<h2>Sign up for Future Tips and Reminders</h2>
 		<span class="glyphicon glyphicon-chevron-down"></span>
 		<div class="action-content">
-			<p class="col-xs-12">Life gets busy, so we can send you text or email reminders to make sure you are staying in touch with <%= @depressed.first_name %>.</p>
+			<p class="col-xs-12">Share your information so we can send more ideas so you can continue to help Hannah.</p>
 			<form class="form-horizontal">
 				<div class="form-group  col-xs-12">
 					<label class="col-xs-12 form-label">Your Email</label>

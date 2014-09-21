@@ -18,20 +18,36 @@
 $(document).ready(function(){
 	$('.messages h2').click(function(){
 		$('.messages .action-content').slideToggle();
+		$(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up");
+		$(this).parent().find("span").toggleClass("glyphicon-chevron-up");
 	});
 	$('.message-family h2').click(function(){
 		$('.message-family .action-content').slideToggle();
+		$(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up");
+		$(this).parent().find("span").toggleClass("glyphicon-chevron-up");
+
 	});
 	$('.reminders h2').click(function(){
 		$('.reminders .action-content').slideToggle();
+		$(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up");
+		$(this).parent().find("span").toggleClass("glyphicon-chevron-up");
+
 	});
 	$('.events h2').click(function(){
 		$('.events .action-content').slideToggle();
+		$(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up");
+		$(this).parent().find("span").toggleClass("glyphicon-chevron-up");
 	});
 	$('.products h2').click(function(){
 		$('.products .action-content').slideToggle();
+		$(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up");
+		$(this).parent().find("span").toggleClass("glyphicon-chevron-up");
+
 	});
 	$('.images h2').click(function(){
 		$('.images .action-content').slideToggle();
+		$(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up");
+		$(this).parent().find("span").toggleClass("glyphicon-chevron-up");
+
 	});
 });

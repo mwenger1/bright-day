@@ -92,6 +92,9 @@ form{
 	width: 100%;
 	border-bottom: 1px solid #ededed;
 }
+.actions-options div:hover span {
+		color: $greenColor;
+}
 .actions-options h2:hover {
 	color: $greenColor;
 }
@@ -104,6 +107,9 @@ form{
 }
 .action-content{
 	display: none;
+}
+.glyphicon-chevron-up:before {
+content: "\e113";
 }
 // Events
 .calendar-item{
