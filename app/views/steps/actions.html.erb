@@ -1,5 +1,94 @@
-<h1>Suggestions to Brighten <%= @depressed.first_name %>'s Day</h1>
-
+<div class="col-xs-12">
+	<h1>Suggestions to Brighten <%= @depressed.first_name %>'s Day</h1>
+</div>
+<div class="actions-options col-xs-12">
+	<div class="messages">
+		<h2>Send a Message</h2>
+		<span class="glyphicon glyphicon-chevron-down"></span>
+		<div class="action-content">
+			<form class="form-horizontal">
+				<div class="form-group  col-xs-12">
+					<label class="col-xs-12 form-label">To: <%= @depressed.first_name %></label>
+					<div class="col-xs-12">
+						<textarea class="form-control" type="text" placeholder="Type your message here"></textarea>
+					</div>
+				</div>
+				<div class=" col-xs-12">
+					<button class="col-xs-11 btn btn-primary" style="margin-bottom: 20px">Send</button>
+				</div>
+			</form>
+			<form class="form-horizontal">
+				<div class="form-group  col-xs-12">
+					<label class="col-xs-12 form-label">
+						To: <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Select from <%= @depressed.first_name %>'s family members<span class="caret"></span></button>
+					<ul class="dropdown-menu" role="menu">
+					    <li><a href="#">Mom</a></li>
+					    <li><a href="#">Dad</a></li>
+					    <li><a href="#">Brother</a></li>
+					</ul>
+					</label>
+					<div class="col-xs-12">
+						<textarea class="form-control" type="text" placeholder="Type your message here"></textarea>
+					</div>
+				</div>
+				<div class=" col-xs-12">
+					<button class="col-xs-11 btn btn-primary" style="margin-bottom: 20px">Send</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="reminders">
+		<h2>Sign up for Reminders</h2>
+		<span class="glyphicon glyphicon-chevron-down"></span>
+		<div class="action-content">
+			<form class="form-horizontal">
+				<div class="form-group  col-xs-12">
+					<label class="col-xs-12 form-label">Your Email</label>
+					<div class="col-xs-12">
+						<input class="form-control" type="text" placeholder="Email Address">
+					</div>
+				</div>
+				<div class=" col-xs-12">
+					<button class="col-xs-11 btn btn-primary" style="margin-bottom: 20px">Sign Up</button>
+				</div>
+			</form>
+			<form class="form-horizontal">
+				<div class="form-group  col-xs-12">
+					<label class="col-xs-12 form-label">Phone Number</label>
+					<div class="col-xs-12">
+						<input class="form-control" type="text" placeholder="###-###-####">
+					</div>
+				</div>
+				<div class=" col-xs-12">
+					<button class="col-xs-11 btn btn-primary" style="margin-bottom: 20px">Sign Up</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="events">
+		<h2>Events and Activities</h2>
+		<span class="glyphicon glyphicon-chevron-down"></span>
+		<div class="action-content">
+		</div>
+	</div>
+	<div class="products">
+		<h2>Products</h2>
+		<span class="glyphicon glyphicon-chevron-down"></span>
+		<div class="action-content">
+			<%= image_tag("light.png", :alt => "Light",:class => "col-xs-12") %>
+			<%= image_tag("book.png", :alt => "Book",:class => "col-xs-12") %>
+		</div>
+	</div>
+	<div class="images">
+		<h2>Image Sharing</h2>
+		<span class="glyphicon glyphicon-chevron-down"></span>
+		<div class="action-content">
+			<%= image_tag("one_happy_puppy.jpg", :alt => "Puppy", :class => "col-xs-4") %>
+			<%= image_tag("pp.jpeg", :alt => "Puppy 2", :class => "col-xs-4") %>
+			<%= image_tag("pup.jpg", :alt => "Puppy 3", :class => "col-xs-4") %>
+		</div>
+	</div>
+</div>
 
 <div class="next-step-container">
 	<%= link_to "Next Step", resources_path, class: "next-step" %>

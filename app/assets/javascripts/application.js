@@ -15,4 +15,21 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
-//= require reveal
+
+$(document).ready(function(){
+	$('.messages h2').click(function(){
+		$('.messages .action-content').slideToggle();
+	});
+	$('.reminders h2').click(function(){
+		$('.reminders .action-content').slideToggle();
+	});
+	$('.events h2').click(function(){
+		$('.events .action-content').slideToggle();
+	});
+	$('.products h2').click(function(){
+		$('.products .action-content').slideToggle();
+	});
+	$('.images h2').click(function(){
+		$('.images .action-content').slideToggle();
+	});
+});
