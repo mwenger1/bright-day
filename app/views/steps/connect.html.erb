@@ -44,7 +44,8 @@
 }
 
 .fbac-suggestion-name {
-  margin-left: 10px;
+  margin-left: 20px;
+  font-size:16px;
 }
 </style>
 
@@ -54,17 +55,13 @@
 
 <div class="inner-addon right-addon">
     <i class="glyphicon glyphicon-search"></i>
-		<input type="search" class="form-control" autofocus placeholder="Search your Facebook friends" />
+		<input type="search" class="form-control" id="fb-input1" autofocus placeholder="Search your Facebook friends" />
 </div>
 <div class="next-step-container">
 	<%= link_to "Next Step", learn_path, class: "next-step" %>
 	<span class="glyphicon glyphicon-chevron-right"></span>
 </div>
 
-    <div class="demo">
-      <h2>Demo #1: Default</h2>
-      <input type="text" id="fb-input1" />
-    </div>
 
      <div id="login">
     <h2>Login in with Facebook to view the demo</h2>

@@ -3,7 +3,7 @@
   pluginName = "facebookAutocomplete";
   defaults = {
     showAvatars: true,
-    avatarSize: 32,
+    avatarSize: 50,
     maxSuggestions: 6
   };
   FacebookAutocomplete = (function() {
